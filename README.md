@@ -14,19 +14,19 @@ typedef struct    {
     Node *pTail;
     int spt;
 }LList;
-/////////////////////////////////////
+
 void initList(LList *L)
     {
     L->pHead = NULL;
     L->pTail = NULL;
     L->spt = 0;
     }
-/////////////////////////////////////
+
 int emptyList(LList L)
  {
     return (L.spt == 0);
 }
-/////////////////////////////////////
+
 void insert_Head(LList *L, Data x)
     {
     Node *pp;
@@ -91,7 +91,7 @@ return NULL;
 }
    
    
-///////////////////////////////////////
+
 void nhap(Data *x){
     printf("Nhap ma sv: ");
     scanf("%d", &(x->masv));
@@ -117,7 +117,7 @@ void processList(LList L){
         pp = pp->link;
     }
 }
-/////////////////////////////////////////
+
 
 int main(){
     LList L;
